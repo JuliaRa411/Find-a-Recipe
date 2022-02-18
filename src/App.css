@@ -1,38 +1,96 @@
+video {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+
+}
+
 .App {
+ background-color: rgba(255, 255, 255, 0.5);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.picture{
+  padding: 12px 24px;
+  
+  font-size: 14px;
+  line-height: 18px;
+  box-shadow: inset 0px 0px 0px 4px #ddd6e8;
+  background-color:hsl(260, 18%, 97%);
+  margin-left: 0px;
+  
 }
+.search {
+  width: 100%;
+  padding: 12px 24px;
+  background-color: transparent;
+  font-size: 14px;
+  line-height: 18px;
+  color: #575756;
+  background-color: transparent;
+  margin-left: 0px;
+  box-shadow: inset 0px 0px 0px 4px #ddd6e8;
+  width: auto;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.icon{
+  width: 30px;
+}
+.list{
   display: flex;
   flex-direction: column;
+  padding: .4em .4em .4em .8em;
+}
+
+li{
+ list-style: none;
+ display: block;
+
+}
+
+
+ul {
+  list-style: none; 
+  padding: 0;
+  text-shadow: 0 1px 0 rgba(255,255,255,.5);
+ 
+}
+
+ 
+h1,  h4, ul,li{
+  font-family: 'Gideon Roman', cursive;
+  text-align: center;
+}
+
+h2{
+  font-family: 'Gideon Roman', cursive;
+  text-align: center;
+  color: #013506;
+  text-shadow: 0 1px 0 rgba(255,255,255,.5);
+}
+
+h4{
+  text-decoration: underline;
+}
+p{
+  font-family: 'Gideon Roman', cursive;
+ 
+  background-color: rgba(255, 255, 255, 0.329);;
+ 
+  text-align: center;
+  color: #044d0b;
+  font-weight: bold;
+  padding: 5px;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
