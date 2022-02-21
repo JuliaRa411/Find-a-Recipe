@@ -25,7 +25,7 @@ return( <div>
 
            
          <div className="style">   
-       <p>Ingredients:</p>
+       <p> <span> Ingredients:</span></p>
       
        <ul className="list">
        {ingredients.map((ingredient, index) => (
@@ -34,7 +34,7 @@ return( <div>
        </ul>
        <h3> Total weight : <span> {totalWeight.toFixed()}</span>  grams</h3>
      
-       <p> Nutrients:</p>
+       <p> <span> Nutrients:</span></p>
        <ul> 
        <li>Fat  - {fat.toFixed()} grams</li>
        <li> Protein - {protein.toFixed()} grams</li>
@@ -42,7 +42,7 @@ return( <div>
        </ul>
         
         
-     <p>Vitamins:</p>
+     <p>  <span> Vitamins:</span></p>
      <ul>
          <li> Vitamin C - { vitaminC.toFixed() }mg</li>
          <li> Vitamin A - {vitaminA.toFixed()}mg</li>

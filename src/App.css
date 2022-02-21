@@ -81,6 +81,7 @@ li{
  display: block;
  text-align: center;
  color: black;
+ font-size: 15px;
  
 
 }
@@ -94,6 +95,10 @@ span{
 }
 ::placeholder{
   text-align: center;
+  color: red;
+  font-size: 15px;
+  font-weight: bold;
+
 }
 ul {
   list-style: none; 
@@ -102,20 +107,27 @@ ul {
  
 }
 h1{
-  color: rgb(12, 156, 48);
-  padding: 5px;
-}
- 
-h1,  h4, ul,li{
   font-family: 'Gideon Roman', cursive;
   text-align: center;
+  color: rgb(12, 156, 48);
+  padding: 5px;
+  font-size: 45px;
+  font-weight: bold;
+  text-shadow: 0 1px 0 rgba(18, 5, 78, 0.986);
+}
+ 
+  h4, ul,li{
+  font-family: 'Gideon Roman', cursive;
+  text-align: center;
+  font-size: 15px;
 }
 
 h2{
   font-family: 'Gideon Roman', cursive;
   text-align: center;
   color: rgb(9, 139, 42);
-  text-shadow: 0 1px 0 rgba(255,255,255,.5);
+  text-shadow: 0 1px 0 rgba(18, 5, 78, 0.986);
+  font-size: 25px;
 }
 
 h4{
@@ -144,3 +156,19 @@ h3{
   background-color: rgba(255, 255, 255, 0.336);;
   width: 450px;
 } 
+
+
+@media all and (max-width: 500px) {
+
+  h1{
+     
+    font-size: 25px;
+  }
+  h2 {
+   
+    font-size: 20px;
+  }
+h3{
+  font-size: 15px;
+}
+}
