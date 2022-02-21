@@ -14,7 +14,7 @@ const MY_KEY ="6eab3c1c7795adb4cd71641ef8214e8f";
 
 const [mySearch, setMySearch] = useState("")
 const [myRecipe, setMyRecipe] = useState([])
-const [wordSubmited, setWordSubmited] = useState("avocado")
+const [wordSubmited, setWordSubmited] = useState("salmon")
  useEffect(async() =>{
   const response = await fetch(`https://api.edamam.com/api/recipes/v2?type=public&q=${wordSubmited}&app_id=33ecfc0e&app_key=6eab3c1c7795adb4cd71641ef8214e8f`) ;
   const data = await response.json();
@@ -45,18 +45,17 @@ setMySearch(e.target.value)
  
   <div className="container">
   <form onSubmit={finalSearch}>
-  <input className='search' placeholder='search' onChange={myRecipeSearch} value ={mySearch}> 
+  <input className='search' placeholder='Search' onChange={myRecipeSearch} value ={mySearch}> 
   </input>
 </form>
 </div>
 
 <div className="container">
-<button>  
-<img src="https://img.icons8.com/color/48/000000/fry.png"/> 
+<button onClick={finalSearch}> <img src="https://img.icons8.com/color/48/000000/fry.png" />  
 </button>
  </div>
 
-  <div className='container'> 
+<div className='container'> 
  
 {myRecipe.map( (element,index) => (
  <MyRecipesComponent  key={index}
@@ -65,6 +64,16 @@ setMySearch(e.target.value)
   calories ={element.recipe.calories}
   cuisineType ={element.recipe.cuisineType}
   ingredients ={element.recipe.ingredientLines}
+  caloriesAll = {element.recipe.calories}
+  mealType ={element.recipe.mealType}
+  fat ={element.recipe.digest[0].total}
+  protein ={element.recipe.digest[2].total}
+  Carbs ={element.recipe.digest[1].total}
+  vitaminC = {element.recipe.digest[12].total}
+  vitaminA = {element.recipe.digest[11].total}
+  VitaminB6 = {element.recipe.digest[16].total} 
+  VitaminK = {element.recipe.digest[23].total}
+  totalWeight ={element.recipe.totalWeight}
   /> 
   ))}
   </div>
