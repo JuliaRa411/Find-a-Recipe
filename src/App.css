@@ -157,7 +157,51 @@ h3{
   width: 450px;
 } 
 
+.social {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+ 
 
+}
+
+.bi{
+  margin: 10px;
+  color: #044d0b;
+  margin-top: -20px;
+  
+}
+
+.bi:hover{
+  color:white
+}
+.footer{
+  margin-top: 150px;
+}
+.creator {
+ 
+   display: flex;
+   justify-content: center;
+   font-family: 'Gideon Roman', cursive;
+   text-align: center;
+   color: #044d0b;
+   font-size:20px;
+   margin-top: -20px;
+   
+   
+  } 
+ .edamam{
+   text-align: center;
+   margin-top: -20px;
+   color: #044d0b;
+   text-decoration:underline;
+   font-family: 'Gideon Roman', cursive;
+   font-size:15px;
+ 
+ }
+ .edamam:hover{
+  color: red;
+ }
 @media all and (max-width: 500px) {
 
   h1{
